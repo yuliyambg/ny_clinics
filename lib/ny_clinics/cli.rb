@@ -5,6 +5,7 @@ class NyClinics::CLI
     NyClinics::Scraper.scrape
     welcome
     menu
+    run
   end
 
   def welcome
@@ -28,7 +29,7 @@ class NyClinics::CLI
         run
       when "2"
         puts "What is the city you would like to search for"
-        city = gets.strip
+        city = gets.strip.upcase
         clinics_city = NyClinics::Clinic.find_by_city(city)
         check_if_empty(clinics_city)
         run
@@ -68,6 +69,7 @@ class NyClinics::CLI
   def run
     puts "If you want to continue enter c to quit enter q"
     if gets.strip == "c"
+      welcome
       menu
     end
   end
