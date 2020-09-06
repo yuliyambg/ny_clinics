@@ -5,7 +5,7 @@ class NyClinics::Clinic
   @@all = []
 
   def initialize(name, street_address, city, zip_code, status)
-    @name = name
+    @name = name.strip
     @street_address = street_address
     @city = city
     @zip_code = zip_code
