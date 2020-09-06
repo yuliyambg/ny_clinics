@@ -42,7 +42,7 @@ class NyClinics::CLI
       when "4"
         puts "What is the status you would like to search for"
         status = gets.strip.upcase
-        clinics_status = NyClinics::Clinic.find_by_zip_code(status)
+        clinics_status = NyClinics::Clinic.find_by_status(status)
         check_if_empty(clinics_status)
         run
       when "5"
