@@ -5,7 +5,6 @@ class NyClinics::CLI
     NyClinics::Scraper.scrape
     welcome
     menu
-    run
   end
 
   def welcome
