@@ -19,19 +19,19 @@ class NyClinics::Clinic
   end
 
   def self.find_by_zip_code(zip_code)
-    self.all.select {|clinic| clinic.zip_code == zip_code}
+    self.all.select { |clinic| clinic.zip_code == zip_code }
   end
 
   def self.find_by_name(name)
-    self.all.select {|clinic| clinic.name == name}
+    self.all.select { |clinic| clinic.name == name }
   end
 
   def self.find_by_city(city)
-    self.all.select {|clinic| clinic.city == city}
+    self.all.select { |clinic| clinic.city == city }
   end
 
   def self.find_by_status(status)
-    self.all.select {|clinic| clinic.status == status}
+    self.all.select { |clinic| clinic.status == status }
   end
 
   def self.list_all
