@@ -5,7 +5,7 @@ require 'nokogiri'
 class NyClinics::Scraper
 
   def self.scrape
-    doc = Nokogiri::HTML(open("https://www.health.ny.gov/regulations/hcra/provider/provcdtc.htm"))
+    doc = Nokogiri::HTML(URI.open("https://www.health.ny.gov/regulations/hcra/provider/provcdtc.htm"))
 
     doc.css("tr").each do |clinic|
       name = clinic.css("td[4]").text
