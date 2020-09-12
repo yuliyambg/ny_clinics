@@ -7,12 +7,15 @@ class NyClinics::CLI
   end
 
   def welcome
-    puts "Welcome to NYC Clinic Finder"
+    puts "----------------------------"
+    puts "Welcome to NY Clinic Finder"
+    puts "----------------------------"
     puts "Press (1) to search by name"
     puts "Press (2) to search by city"
     puts "Press (3) to search by zip code"
     puts "Press (4) to search by status"
     puts "Press (5) to list all"
+    puts "----------------------------"
   end
 
   def menu
