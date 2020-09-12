@@ -21,7 +21,7 @@ class NyClinics::CLI
     case input
     when "1"
       puts "What is the name you would like to search for"
-      name = gets.strip
+      name = gets.strip.upcase
       clinics_name = NyClinics::Clinic.find_by_name(name)
       check_if_empty(clinics_name)
       run
