@@ -19,7 +19,7 @@ class NyClinics::CLI
   end
 
   def menu
-    input = gets.strip.downcase
+    input = gets.strip
 
     case input
     when "1"
