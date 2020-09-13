@@ -23,7 +23,8 @@ class NyClinics::Clinic
   end
 
   def self.find_by_name(name)
-    self.all.select { |clinic| clinic.name == name }
+    # self.all.select { |clinic| clinic.name == name }
+    self.all.select { |clinic| clinic.name.include?(name) }
   end
 
   def self.find_by_city(city)

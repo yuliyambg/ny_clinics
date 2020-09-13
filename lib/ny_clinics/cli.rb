@@ -68,7 +68,7 @@ class NyClinics::CLI
   end
 
   def run
-    puts "If you want to continue enter c to quit enter q"
+    puts "If you want to continue enter c to quit enter any key"
     if gets.strip.downcase == "c"
       welcome
       menu
