@@ -39,6 +39,10 @@ class NyClinics::Clinic
     self.all
   end
 
+  def self.count
+    @@all.count
+  end
+
   def print_f
     puts "---------------------------"
     puts name
