@@ -1,9 +1,8 @@
 # NyClinics
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ny_clinics`. To experiment with that code, run `bin/console` for an interactive prompt.
+ NY Clinics Finder CLI Gem, allows users to find clinics in New York based on different search options. 
 
-TODO: Delete this and the text above, and describe your gem
-
+ 
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -22,7 +21,44 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+The user is presented with a welcome message and the following search options:
+
+```
+----------------------------
+Welcome to NY Clinic Finder
+----------------------------
+Press (1) to search by name
+Press (2) to search by city
+Press (3) to search by zip code
+Press (4) to search by status
+Press (5) to list all
+----------------------------
+```
+
+The user needs to then select the option they would like to search by.
+They will then get a prompt to enter the search criteria, and then will need to enter the criteria.
+
+```
+What is the zip code you would like to search for:
+11235
+```
+
+All clinics with that option are shown below 
+
+```
+---------------------------
+PRIME CARE ON THE BAY, LLC
+1711 SHEEPSHEAD BAY RD
+BROOKLYN
+11235
+CLOSED
+---------------------------
+```
+
+After showing the clinics, user is given an option to continue or exit
+```
+If you want to continue enter c to quit enter any key
+```
 
 ## Development
 
