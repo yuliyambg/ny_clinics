@@ -1,6 +1,7 @@
 class NyClinics::Clinic
 
-  attr_accessor :name, :street_address, :city, :zip_code, :status
+  # attr_accessor :name, :street_address, :city, :zip_code, :status
+  attr_reader :name, :street_address, :city, :zip_code, :status
 
   @@all = []
 
